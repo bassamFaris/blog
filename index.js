@@ -45,7 +45,7 @@ function writeBlog(req, res, next) {
   console.log(title);
   console.log(yourStory);
   res.redirect("/");
-  //  next()
+ //   next()
 }
  
 function  date() {  
