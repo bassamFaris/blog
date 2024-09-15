@@ -1,0 +1,38 @@
+
+  <body>
+    <div class="container">
+      <%- include('headers.ejs') %>
+
+    <div class="container my-5">
+      <% x.forEach(element => { %>
+      <div class="p-2  bg-body-tertiary rounded-3 border-bottom mb-2">
+   <div class="row ">
+   <p class="col lead"><%= date %> at <%= fullTime %></p>
+    <div class="col text-end align-self-center">
+   <button type="submit" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"></path>
+        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"></path>
+      </svg></button>
+ 
+    <a class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor">
+      <path d="M18.4,4.4l1.2,1.2L6.2,19H5v-1.2L18.4,4.4 M18.4,2c-0.3,0-0.5,0.1-0.7,0.3L3,17v4h4L21.7,6.3c0.4-0.4,0.4-1,0-1.4l-2.6-2.6 C18.9,2.1,18.7,2,18.4,2L18.4,2z"/>
+      <path d="M15.8 4.3H17.8V9.2H15.8z" transform="rotate(-45.001 16.75 6.75)"/></svg> </a></div>
+   
+  </div>
+       
+        
+        <h1 class="text-body-emphasis"><%= element.title %></h1>
+        <p class="lead">
+          <%= element.yourStory %>
+        </p>
+      </div>
+
+      <% }) %>
+
+
+    </div>
+    
+    
+  </body>
+
+</html>

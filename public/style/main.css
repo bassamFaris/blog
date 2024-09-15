@@ -1,0 +1,11 @@
+/* styles.css */
+.cc{
+    color: rgb(101, 100, 100);
+    fill: rgb(101, 100, 100);
+    filter: grayscale(100%) brightness(0) sepia(100%) hue-rotate(rgb(101, 100, 100)) saturate(500%) contrast(200%);
+
+}
+
+.cc:hover{
+    color: black;
+}
